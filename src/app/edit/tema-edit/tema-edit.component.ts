@@ -29,7 +29,6 @@ export class TemaEditComponent implements OnInit {
     this.findByIdTema(id)
   }
 
-
   findByIdTema(id: number) {
     this.temaService.getByIdTema(id).subscribe((resp: Tema) => {
       this.tema = resp
